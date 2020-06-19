@@ -1,15 +1,17 @@
 package com.example.moji;
+
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 @EnableAutoConfiguration
 public class HomeController {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "home";
     }
     
 }
